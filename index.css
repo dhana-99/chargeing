@@ -1,0 +1,48 @@
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+.splash-screen {
+  animation: fadeIn 1s ease-in;
+}
+
+.battery-icon {
+  font-size: 60px;
+  color: #00c853;
+  animation: pulse 1.5s infinite;
+}
+
+.loading-bar {
+  width: 200px;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background-color: #00c853;
+  animation: loading 3s linear infinite;
+}
+
+@keyframes loading {
+  0% { width: 0%; }
+  50% { width: 80%; }
+  100% { width: 0%; }
+}
+
+.onboarding-screen img {
+  border-radius: 10px;
+}
+
+.pagination-dots {
+  font-size: 1.2rem;
+  letter-spacing: 8px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
